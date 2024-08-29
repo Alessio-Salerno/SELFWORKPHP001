@@ -39,6 +39,7 @@ class Company {
     public function spesaAnnuale() {
         $spesa = $this->tot_employees * $this->salary_per_employee;
         echo "La spesa annuale per l'azienda $this->name è di $spesa euro\n"; 
+        return $spesa;
     }
 
 
@@ -54,7 +55,7 @@ class Company {
         $totale_spese += $company->spesaAnnuale();
       }
 
-
+     
       echo "Il totale delle spese di tutte le aziende è di $totale_spese euro\n";
 
 
